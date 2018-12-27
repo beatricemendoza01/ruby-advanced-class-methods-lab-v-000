@@ -45,5 +45,7 @@ class Song
     self.all.sort_by { |song| song.name }
   end
   
-  def self.
+  def self.new_from_filename(filename)
+    song_name = filename.split('-')
+  end
 end
