@@ -50,6 +50,9 @@ class Song
     name = filename[0]
     artist_name = filename[1].sub('.mp3', '')
     
-    self.create_by_name(name)
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
+    song
   end
 end
